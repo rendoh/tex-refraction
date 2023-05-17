@@ -3474,7 +3474,7 @@ float genShadow(vec3 ro, vec3 rd){
   float c = 0.001;
   float r = 1.0;
   float shadowCoef = 0.5;
-  for(float t = 0.0; t < 50.0; t++){
+  for(float t = 0.0; t < 10.; t++){
     h = map(ro - rd * c).dist;
     if(h < 0.001){
       return shadowCoef;
